@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<title></title>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a href="index.html" class="navbar-brand">
+					<img src="img/watchguru.png" alt="Watchguru">
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="menu">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="">Ordens de Serviços</a>
+					</li>
+					<li>
+						<a href="">Clientes</a>
+					</li>
+					<li>
+						<a href="">Funcionários</a>
+					</li>
+					<li>
+						<a href="">Serviços</a>
+					</li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="" class="dropdown-toggle" data-toggle="dropdown">
+							Minha conta
+							<span class="caret"></span>
+						</a>
+
+						<div class="dropdown-menu perfil">
+							<div class="col-sm-4">
+								<img class="img-responsive img-rounded" src="https://api.adorable.io/avatars/100/watchuru.png">
+							</div>
+
+							<ul class="list-unstyled col-sm-8">
+								<li>Fulano de Tal</li>
+								<li>
+									<a href="">Alterar Perfil</a>
+								</li>
+								<li>
+									<a href="">Sair</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<ol class="breadcrumb">
+			<li>
+				<a href="">Ínicio</a>
+			</li>
+			<li>
+				<a href="">Ordens de Serviço</a>
+			</li>
+			<li class="active">Pesquisa</li>
+		</ol>
+
+		<div class="row cabecalho">
+			<div class="col-xs-12 col-md-6">
+				<h1>Ordens de Serviços</h1>
+			</div>
+
+			<div class="col-xs-12 col-md-4 col-md-offset-2 busca">
+				<div class="input-group">
+					<input type="text" name="busca" class="form-control" placeholder="Pesquisar por nome do cliente">
+
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="table-responsive">
+			<table class="dados-os table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th>Cod.</th>
+						<th>Data</th>
+						<th>Cliente</th>
+						<th>Valor</th>
+						<th>Funcionário</th>
+						<th>Status</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>55514</td>
+						<td>05/07/2018</td>
+						<td>Fábio do Reis</td>
+						<td>500,00</td>
+						<td>Junior Ribeiro</td>
+						<td>
+							<span class="label label-primary">
+								Em Andamento
+							</span>
+						</td>
+						<td class="text-center">
+							<a href="" title="Finalizar" data-toggle="tooltip">
+								<span class="glyphicon glyphicon-ok text-success"></span>
+							</a>
+							<a href="" title="Editar" data-toggle="tooltip">
+								<span class="glyphicon glyphicon-pencil text-warning"></span>
+							</a>
+							<a href="" title="Excluir" data-toggle="tooltip">
+								<span class="glyphicon glyphicon-trash text-danger"></span>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- / .table-responsive -->
+
+		<footer class="row">
+			<div class="col-sm-6">
+				<button class="btn btn-primary">Nova Ordem de Serviço</button>
+			</div>
+			<div class="col-sm-6 paginacao text-right">
+				<ul class="pagination">
+					<li class="disabled">
+						<a href="">
+							<span>&laquo;</span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="">1</a>
+					</li>
+					<li>
+						<a href="">2</a>
+					</li>
+					<li>
+						<a href="">3</a>
+					</li>
+					<li>
+						<a href="">4</a>
+					</li>
+					<li>
+						<a href="">
+							<span>&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!-- / .container -->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

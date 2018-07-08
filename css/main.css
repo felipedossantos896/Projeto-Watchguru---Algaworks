@@ -1,0 +1,39 @@
+body {
+    background-color: #eee;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.bloco {
+    height: 800px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#principal {
+    background-color: #ffcccc;
+}
+
+#perfil {
+    background-color: #ccffcc;
+}
+
+#mensagem {
+    background-color: #ccccff;
+}
+
+#menu {
+    background-color: #fff;
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    top: 10px;
+}
+
+#menu.affix-top {
+    position: absolute;
+    top: 100px;
+}

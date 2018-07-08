@@ -146,7 +146,7 @@
 
 		<footer class="row">
 			<div class="col-sm-6">
-				<button class="btn btn-primary">Nova Ordem de Serviço</button>
+				<button class="btn btn-primary" data-toggle="modal" data-target="#NovaOS">Nova Ordem de Serviço</button>
 			</div>
 			<div class="col-sm-6 paginacao text-right">
 				<ul class="pagination">
@@ -177,6 +177,75 @@
 		</footer>
 	</div>
 	<!-- / .container -->
+
+	<div class="modal" id="NovaOS">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" data-dismiss="modal" class="close">
+						<span class="glyphicon glyphicon-remove"></span>
+					</button>
+					<h4 class="modal-title">Nova Ordem de Servico</h4>
+				</div>
+
+				<form>
+					<div class="modal-body">
+						<div class="alert alert-danger">
+							<button type="button" data-dismiss="alert" class="close">
+								<span>&times;</span>
+							</button>
+							<p>Occoreu um erro!</p>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-12">
+								<label class="control-label">Codigo da OS</label>
+								<p class="form-control-static">65874</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-5">
+								<label for="cliente" class="control-label">Cliente</label>
+								<select id="cliente" class="form-control">
+									<option value="">...Selecione</option>
+									<option value="1">Felipe dos Santos</option>
+									<option value="2">Jonas Beluti</option>
+									<option value="3">Ricardo Bras</option>
+								</select>
+							</div>
+							<div class="form-group has-warning col-sm-7">
+								<label for="servicos" class="control-label">Servicos</label>
+								<select id="servicos" class="form-control">
+									<option value="">...Selecione</option>
+									<option value="1">Manutencao do Sistema</option>
+									<option value="2">Configuracao do Site</option>
+									<option value="3">Testes no Sistema</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group has-error col-xs-12">
+								<label for="observacao" class="control-label">Observação</label>
+								<textarea id="observacao" class="form-control" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group has-success col-xs-4">
+								<label for="valor" class="control-label">Valor</label>
+								<div class="input-group">
+									<div class="input-group-addon">R$</div>
+									<input id="valor" class="form-control">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="reset" class="btn btn-danger">Limpar</button>
+						<button type="submit" class="btn btn-primary">Salvar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
